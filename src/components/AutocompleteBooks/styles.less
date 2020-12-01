@@ -1,0 +1,24 @@
+@light-gray: #A9A9A9;
+@black: #000;
+
+.wrapper{
+  color: @black;
+  background-color: @light-gray;
+  position: absolute;
+  left: 35%;
+  margin-left: 5px;
+  width:300px;
+  height: 200px;
+  overflow: scroll;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  .wrapper_link{
+    color: @black;
+    font-family: sans-serif;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 800px)  {
+  .wrapper{
+    left: 0;
+  }
+}

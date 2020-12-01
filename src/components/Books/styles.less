@@ -1,0 +1,34 @@
+@darkgray: #222;
+@black: #000;
+@white: #fff;
+
+.container{
+  grid-area: content;
+  background-color: @darkgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
+  .block{
+    width: 300px;
+    height: 400px;
+    border: 1px solid @black;
+    text-align: center;
+    color: @white;
+    &:hover{
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .block_img{
+      width: 140px;
+      height: 250px;
+      margin-left: 10px;
+      margin-bottom:20px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,12 @@
+body{
+  margin: 0;
+}
+.container-wrapper{
+  display: grid;
+  grid-template-areas:
+    'header'
+    'content';
+  grid-template-rows: 60px 1fr;
+  height: 100vh;
+  background-color: #222;
+}
